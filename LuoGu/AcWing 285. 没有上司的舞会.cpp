@@ -1,27 +1,44 @@
-#include <iostream>
-using namespace std;
+//https://www.acwing.com/problem/content/description/287/
 
-void quick_sort(int a[],int l,int r){
-    if(l>=r) return ;
-    int i=l,j=r,x=a[(l+r)>>1];
-    while(i<j){
-        while(a[i]<x) i++;
-        while(a[j]>x) j--;
-        if(i<j) swap(a[i],a[j]);
-    }
-    quick_sort(a,l,j-1),quick_sort(a,j,r);
+#include<iostream>
+#include<algorithm>
+#include<cstring>
+using namespace std;
+const int N = 6010;
+int n;
+int happy[N];
+int f[N][2];
+int e[N],ne[N],h[N],idx;
+bool has_father[N];
+
+void add(int a,int b){
+    e[idx]=b,ne[idx]=h[a],h[a]=idx++;
 }
 
+void dfs(int u){
+    f[u][1]=happy[u];
+    for(int i=h[u];i!=-1;i=ne[i]){
+        int j=e[i];
+        dfs(j);
+        f[u][0]+=max(f[j][1],f[j][0]);
+        f[u][1]+=f[j][0];
+    }
+}
 
 int main(){
-    int n;
-    int a[100001];
-    cin>>n;
-    for(int i=0;i<n;i++){
-        cin>>a[i];
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++) scanf("%d",&happy[i]);
+    memset(h,-1,sizeof h);
+    for(int i=1;i<n;i++){
+        int a,b;
+        scanf("%d%d",&a,&b);
+        has_father[a]=true;
+        add(b,a);
     }
-    quick_sort(a,0,n-1);
-    for(int i=0;i<n;i++){
-        cout<<a[i]<<" ";
-    }
+    int root=1;
+    while(has_father[root]) root++;
+    dfs(root);
+    printf("%d\n",max(f[root][0],f[root][1]));
+    return 0;
 }
+
