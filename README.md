@@ -1,42 +1,40 @@
-<<<<<<< HEAD
 # 算法刷题集
-记录自己刷过的算法题
-=======
-# Algorithm
+记录自己刷过的算法题，追踪算法能力提高历程
 
-#### 介绍
-记录刷过的算法题
+## 仓库目的
+本仓库用于系统性记录我的算法学习和刷题过程，包括：
+- 各类算法题的解题思路与实现代码
+- 算法知识点的总结与回顾
+- 刷题计划的执行与进度追踪
+- 算法能力提升的成长历程
 
-#### 软件架构
-软件架构说明
+## Algorithm
 
+### 介绍
+这里记录了我在各类平台上刷过的算法题，按照算法类型和难度进行分类整理，便于复习和回顾。
 
-#### 安装教程
+### 刷题平台
+- LeetCode
+- 剑指Offer
+- ACWing
+- 其他算法题库
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+### 算法分类
+- 数组与字符串
+- 链表
+- 树与二叉树
+- 图论
+- 动态规划
+- 贪心算法
+- 回溯算法
+- 排序与搜索
+- 数学问题
+- 位运算
 
-#### 使用说明
+### 学习计划
+- 每日刷题记录
+- 周总结与回顾
+- 算法知识点专项突破
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
->>>>>>> ffeb1a1 (Initial commit)
+## 参与贡献
+本仓库为个人学习记录，暂不接受外部贡献。
